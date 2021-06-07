@@ -21,11 +21,60 @@ A place for charcuterie lovers to find perfect pairings for their boards! This a
 
 ## API and Data Sample
 
-[Cheese Api](https://airtable.com/tblsBHpZVwgKIHMHi/viwvtORkCzIKzfrie?blocks=hide)
-
-[User Opinions](https://airtable.com/tblF6eMnxghsJcjx0/viwm6om7Gn976IZh4?blocks=hide)
-
+Cheese endpoint:
+```json
+{
+    "records": [
+        {
+            "id": "recvyCxOZe1Bdmb1T",
+            "fields": {
+                "name": "Gouda",
+                "flavor": "Sweeter and Nutty",
+                "type": "Semi-Soft, Semi-Hard, or Hard"
+            },
+            "createdTime": "2021-06-06T19:20:43.000Z"
+        },
+        {
+            "id": "recSBbteQfpKAApBc",
+            "fields": {
+                "sweetOrSavory": "Apple Butter, Fruit Slices",
+                "name": "Cheddar",
+                "flavor": "Earthy/Nutty and Sharp ",
+                "meat": "Calabrese, Soppresata",
+                "type": "Hard"
+            },
+            "createdTime": "2021-06-06T19:20:43.000Z"
+        },
+        {
+            "id": "recNVs6pVTpU6krri",
+            "fields": {
+                "name": "Gruyere",
+                "flavor": "Earthy/Nutty and Sweet",
+                "type": "Alpine"
+            },
+            "createdTime": "2021-06-06T19:20:43.000Z"
+        }
+    ],
+    "offset": "recNVs6pVTpU6krri"
+}
 ```
+
+User Opinions endpoint:
+
+```json
+{
+    "records": [
+        {
+            "id": "recUM6ZnkfzXFyleZ",
+            "fields": {
+                "name": "Anonymous",
+                "input": "Love gouda! you should plate it with honey!"
+            },
+            "createdTime": "2021-06-07T15:53:41.000Z"
+        },
+    ],
+    "offset": "recEEvzVoZlvZzUZY"
+}
 ```
 
 ### MVP/PostMVP
