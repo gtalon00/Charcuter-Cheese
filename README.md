@@ -21,7 +21,9 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## API and Data Sample
 
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
+[Cheese Api](https://airtable.com/tblsBHpZVwgKIHMHi/viwvtORkCzIKzfrie?blocks=hide)
+
+[User Opinions](https://airtable.com/tblF6eMnxghsJcjx0/viwm6om7Gn976IZh4?blocks=hide)
 
 ```
 ```
