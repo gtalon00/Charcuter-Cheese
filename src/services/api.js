@@ -1,8 +1,8 @@
 import axios from "axios"
 
 const api_key = process.env.REACT_APP_AIRTABLE_KEY;
-const cheeseURL = 'https://api.airtable.com/v0/appTNZJOJVjRbR8nS/Cheese/recvyCxOZe1Bdmb1T'
-const userOpinionURL = 'https://api.airtable.com/v0/appTNZJOJVjRbR8nS/User%20Opinion/recUM6ZnkfzXFyleZ'
+const cheeseURL = 'https://api.airtable.com/v0/appTNZJOJVjRbR8nS/Cheese'
+const userOpinionURL = ''
 const config = {
   headers: {
     Authorization: `Bearer ${api_key}`
@@ -29,7 +29,7 @@ export const GetUserOpinion = async () => {
 
 export const PostUserOpinion = async (form) => {
   try {
-    const res = await axios.get(userOpinionURL, {fields: form}, config)
+    const res = await axios.post(userOpinionURL, {fields: form}, config)
     return res.data
   } catch (error) {
     throw error
