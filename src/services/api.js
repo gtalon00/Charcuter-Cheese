@@ -12,7 +12,7 @@ const config = {
 export const GetCheeses = async () => {
   try {
     const res = await axios.get(cheeseURL, config)
-    return res.data
+    return res.data.records
   } catch (error) {
     throw error
   }

@@ -1,18 +1,14 @@
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import {GetCheeses} from "../services/api"
 
 export default function CheeseInfo() {
   const [cheeses, setCheeses] = useState([])
-  // const [cheese, setCheese] = useState({
-  //   name: "",
-  //   type: "",
-  //   flavor: "",
-  // })
+
   useEffect(() => {
     const fetchData = async () => {
       const res = await GetCheeses()
       console.log(res)
-      setCheeses(res.fields)
+      setCheeses(res)
     }
     fetchData()
   }, [])
@@ -23,9 +19,9 @@ export default function CheeseInfo() {
         cheeses.map((cheese) => {
           return (
             <div>
-              <h1>{cheese.name}</h1>
-              <p>{cheese.type}</p>
-              <p>{cheese.flavor}</p>
+              <h1>{cheese.fields.name}</h1>
+              <p>{cheese.fields.type}</p>
+              <p>{cheese.fields.flavor}</p>
             </div>
           )
         })}
