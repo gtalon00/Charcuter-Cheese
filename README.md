@@ -80,12 +80,12 @@ User Opinions endpoint:
 ### MVP/PostMVP
 
 #### MVP 
-- use two airtable apis, one for data and another for user input. 
-- have open section for user suggestions on cheeses 
-- have at least three different webpages pages
+- use two airtable endpoints, one for cheese data and another for user input. 
+- have a creation form section for user suggestions on charcuterie bord construction
+- have at least three different Views/Routes
 
 #### PostMVP  
-- utilize three js
+- utilize three.js
 - make cheese loading icons
 
 ## Project Schedule
