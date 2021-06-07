@@ -6,7 +6,7 @@
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and/or functionality.
+A place for charcuterie lovers to find perfect pairings for their boards! This application is an easy to use hub for users to find information on their favorite cheeses and their pairing. Users can see a variety of their favorite cheeses and spreads, as well as being able to add a suggestion for what they would like to see theat they did not find on the website.
 
 ## Wireframes
 
