@@ -74,7 +74,7 @@ Use this section to describe your final project and perhaps any links to relevan
 | CSS Rough Draft | H | 3 |  |  |
 | CSS Final Touches | H | 4 |  |  |
 | Clean Up Code And Warnings | H | 3 |  |  |
-| Attempt MVPs | H | 4 |  |  |
+| Attempt PMVPs | H | 4 |  |  |
 | Total | H | 47hrs| hrs | hrs |
 
 ## SWOT Analysis
