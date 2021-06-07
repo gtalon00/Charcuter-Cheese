@@ -1,12 +1,17 @@
 import React from 'react'
-import Navbar from "./layout/Navbar"
 
 export default function Home() {
 
   return (
     <div>
       Home
-      <Navbar />
+        <br />
+      Charcuter-Cheese
+        <br />
+      Find your perfect charcuterie pairings
+        <br />
+      Look at our suggestions and other user's for your ideal board!
+      
     </div>
   )
 }
