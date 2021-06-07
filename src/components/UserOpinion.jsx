@@ -1,34 +1,31 @@
-import {useState} from 'react'
+import { useState, useEffect } from 'react'
+import { GetUserOpinion } from "../services/api"
+import Form from "./inputs/Form"
 
-export default function UserOpinion() {
-  const newComment = {
-    name: "",
-    input: "",
-  }
-  const [input, setInput] = useState()
+export default function CheeseInfo() {
+  const [opinions, setOpinions] = useState([])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await GetUserOpinion()
+      console.log(res)
+      setOpinions(res)
+    }
+    fetchData()
+  }, [])
+  
   return (
     <div>
-      <br />
-      <label> Give us your feedback! What cheeses
-        or pairings are you a fan of or
-        would you like to see?</label>
-      <form>
-        <input
-          type="text"
-          name="name"
-          placeholder="Name/Anonymous"
-        />
-        <br />
-        <input 
-          style={{height: 100}}
-          type="text"
-          name="input"
-          placeholder="Your thoughts!"
-        />
-        <br />
-        <button >Submit</button>
-      </form>
-      
+      <Form />
+      {opinions &&
+        opinions.map((opinion) => {
+          return (
+            <div>
+              <h3>{opinion.fields.name}</h3>
+              <p>{opinion.fields.input}</p>
+            </div>
+          )
+        })}
     </div>
   )
 }
