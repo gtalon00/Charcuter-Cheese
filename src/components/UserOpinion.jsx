@@ -16,7 +16,7 @@ export default function CheeseInfo() {
   
   return (
     <div>
-      <Form />
+      <Form setOpinions={setOpinions}/>
       {opinions &&
         opinions.map((opinion) => {
           return (

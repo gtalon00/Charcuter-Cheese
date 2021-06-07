@@ -1,7 +1,9 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import { PostUserOpinion } from "../../services/api"
 
-export default function Form() {
+export default function Form(props) {
+const { setOpinions } = props
+
   const newComment = {
     name: "",
     input: "",
@@ -20,6 +22,9 @@ export default function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     const res = await PostUserOpinion(input)
+    setOpinions(opinions => ([
+    { fields: input }, ...opinions
+    ]))
   }
 
   
