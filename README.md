@@ -1,141 +1,70 @@
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Project Overview
+## Available Scripts
 
-## Charcuter-Cheese
+In the project directory, you can run:
 
-## Project Description
+### `npm start`
 
-A place for charcuterie lovers to find perfect pairings for their boards! This application is an easy to use hub for users to find information on their favorite cheeses and their pairing. Users can see a variety of their favorite cheeses and spreads, as well as being able to add a suggestion for what they would like to see theat they did not find on the website.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Wireframes
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-[Homepage](https://wireframe.cc/3MkkDx)
+### `npm test`
 
-[Cheese info](https://wireframe.cc/3aq4xn)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-[User Opinions](https://wireframe.cc/O7GnRl)
+### `npm run build`
 
-## Component Hierarchy
-[Hierarchy Link](https://whimsical.com/4QYvqQwrg3rCWefq4NB7FW) 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## API and Data Sample
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Cheese endpoint:
-```json
-{
-    "records": [
-        {
-            "id": "recvyCxOZe1Bdmb1T",
-            "fields": {
-                "name": "Gouda",
-                "flavor": "Sweeter and Nutty",
-                "type": "Semi-Soft, Semi-Hard, or Hard"
-            },
-            "createdTime": "2021-06-06T19:20:43.000Z"
-        },
-        {
-            "id": "recSBbteQfpKAApBc",
-            "fields": {
-                "sweetOrSavory": "Apple Butter, Fruit Slices",
-                "name": "Cheddar",
-                "flavor": "Earthy/Nutty and Sharp ",
-                "meat": "Calabrese, Soppresata",
-                "type": "Hard"
-            },
-            "createdTime": "2021-06-06T19:20:43.000Z"
-        },
-        {
-            "id": "recNVs6pVTpU6krri",
-            "fields": {
-                "name": "Gruyere",
-                "flavor": "Earthy/Nutty and Sweet",
-                "type": "Alpine"
-            },
-            "createdTime": "2021-06-06T19:20:43.000Z"
-        }
-    ],
-    "offset": "recNVs6pVTpU6krri"
-}
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-User Opinions endpoint:
+### `npm run eject`
 
-```json
-{
-    "records": [
-        {
-            "id": "recUM6ZnkfzXFyleZ",
-            "fields": {
-                "name": "Anonymous",
-                "input": "Love gouda! you should plate it with honey!"
-            },
-            "createdTime": "2021-06-07T15:53:41.000Z"
-        },
-    ],
-    "offset": "recEEvzVoZlvZzUZY"
-}
-```
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### MVP/PostMVP
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-#### MVP 
-- use two airtable endpoints, one for cheese data and another for user input. 
-- have a creation form section for user suggestions on charcuterie bord construction
-- have at least three different Views/Routes
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-#### PostMVP  
-- utilize three.js
-- make cheese loading icons
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Project Schedule
+## Learn More
 
-|  Day | Deliverable | Status
-|---|---| ---|
-|June 5-6| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|June 7| Project Approval | Incomplete
-|June 8| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|June 9| Pseudocode / actual code | Incomplete
-|June 10| Initial Clickable Model  | Incomplete
-|June 11| MVP | Incomplete
-|June 12-13| CSS Finalization | Incomplete
-|June 14| Presentations | Incomplete
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Timeframes
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Project Approval | H | 2 |  |  |
-| Download Dependencies | H | .5 |  |  |
-| Create Comonents/Folders | H | 1 |  |  |
-| Pseudo Code | H | 1 |  |  |
-| Base Code Layout | H | 2 |  |  |
-| Api Set Up/test | H | 2.5 |  |  |
-| Code For Homepage | H | 3.5 |  |  |
-| Code For Info Page  | H | 3.5 |  |  |
-| Code For User Opinion | H | 3.5 |  |  |
-| Have Clickable Model | H | 2 |  |  |
-| Import Different Components And console.log() To Test | H | 1 |  |  |
-| Render Content On Screen For Each Page | H | 4 |  |  |
-| Link Pages And Test Them | H | 2.5 |  |  |
-| CSS Structure | H | 3 |  |  |
-| CSS Images | H | 1 |  |  |
-| CSS Rough Draft | H | 3 |  |  |
-| CSS Final Touches | H | 4 |  |  |
-| Clean Up Code And Warnings | H | 3 |  |  |
-| Attempt PMVPs | H | 4 |  |  |
-| Total | H | 47hrs| hrs | hrs |
+### Code Splitting
 
-## SWOT Analysis
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Strengths: 
-I know exactly what i want my application to look like/want it to do. I can plan well for what needs to be done/how long it will take.
+### Analyzing the Bundle Size
 
-### Weaknesses: 
-At times Linking up can confuse me, as well as styling within react; styling is fairly easier for me in comparison to JS but going between different files can throw me off guard a little bit.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Opportunities: 
-This project will give me the chance to let my understanding of react really sink in. I also am hoping to look a little into three.js during this project to see what I may be able to do in this project, or how I may be able to utilize it in future projects.
+### Making a Progressive Web App
 
-### Threats: 
-I tend to doubt that I know answers to my problems even when I really do. I can tend to freeze up a bit because I don't want to get it wrong, but need to try it and fail because most of the time I do know answers.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
