@@ -22,7 +22,9 @@ function App() {
         </Route>
 
         <Route exact path="/cheese-paring">
-        <CheeseInfo />
+          <div class="app-info-container">
+            <CheeseInfo />
+          </div>
         </Route>
 
         <Route exact path="/user-opinion">
