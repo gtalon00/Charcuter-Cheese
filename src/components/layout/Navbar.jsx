@@ -11,22 +11,18 @@ export default function Navbar() {
         </Link>
         </li>
 
-        <br />
         <li class="li-links">
         <Link to="/cheese-paring" style={{ textDecoration: 'none' }}>
         Find Some Cheese Based Parings!
         </Link>
         </li>
 
-        
-        <br />
         <li class="li-links">
         <Link to="/user-opinion" style={{ textDecoration: 'none' }}>   
             User's Opinion
         </Link>
         </li>
         </ul>
-        <br />
     </div>
   )
 }
