@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import {GetCheeses} from "../services/api"
 import Navbar from "./layout/Navbar"
+import Header from "./layout/Header"
+
 export default function CheeseInfo() {
   const [cheeses, setCheeses] = useState([])
 
@@ -14,6 +16,8 @@ export default function CheeseInfo() {
   }, [])
   
   return (
+    <div>
+      <Header />
     <div class="cheese-info">
       <Navbar />
       {cheeses &&
@@ -32,6 +36,7 @@ export default function CheeseInfo() {
             </div>
           )
         })}
+        </div>
     </div>
   )
 }
