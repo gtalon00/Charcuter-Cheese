@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import {GetCheeses} from "../services/api"
-
+import Navbar from "./layout/Navbar"
 export default function CheeseInfo() {
   const [cheeses, setCheeses] = useState([])
 
@@ -14,7 +14,8 @@ export default function CheeseInfo() {
   }, [])
   
   return (
-    <div>
+    <div class="cheese-info">
+      <Navbar />
       {cheeses &&
         cheeses.map((cheese) => {
           return (
