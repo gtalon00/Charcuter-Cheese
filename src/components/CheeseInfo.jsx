@@ -22,6 +22,10 @@ export default function CheeseInfo() {
               <h1>{cheese.fields.name}</h1>
               <p>{cheese.fields.type}</p>
               <p>{cheese.fields.flavor}</p>
+              <p>{cheese.fields.meat}</p>
+              <p>{cheese.fields.crackerBreadOrNut}</p>
+              <p>{cheese.fields.sweetOrSavory}</p>
+              <p>{cheese.fields.drink}</p>
             </div>
           )
         })}
