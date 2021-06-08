@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { GetUserOpinion } from "../services/api"
+import Navbar from "./layout/Navbar"
 import Form from "./inputs/Form"
 
 export default function CheeseInfo() {
@@ -15,17 +16,20 @@ export default function CheeseInfo() {
   }, [])
   
   return (
-    <div>
+    <div class="right-side">
+      <Navbar />
+      <div class="user-interaction">
       <Form setOpinions={setOpinions}/>
       {opinions &&
         opinions.map((opinion) => {
           return (
-            <div>
+            <div class="user-opinion-in-view">
               <h3>{opinion.fields.name}</h3>
               <p>{opinion.fields.input}</p>
             </div>
           )
         })}
+        </div>
     </div>
   )
 }

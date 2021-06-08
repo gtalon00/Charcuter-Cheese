@@ -15,6 +15,15 @@
   height: 100vh;
 }
 
+.home-view > h1 {
+  text-shadow: 1px 0 10px rgb(0, 0, 0);
+}
+.home-view > h2 {
+  text-shadow: 1px 0 10px rgb(0, 0, 0);
+}
+.home-view > p {
+  text-shadow: 1px 0 10px rgb(0, 0, 0);
+}
 /*//////// CheeseInfo View ////////*/
 /*/ //////////////////////////// /*/
 
@@ -32,8 +41,6 @@
 .app-info-container {
   display: flex;
   flex-direction: column;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr; */
   background-color: rgb(116, 101, 83);
 }
 
@@ -45,12 +52,27 @@
 /*//////// User Opinion View////////*/
 /*/ ///////////////////////////// /*/
 
+.right-side {
+  background-color: coral;
+  display: flex;
+  flex-direction: row;
+}
+.user-interaction {
+  display: flex;
+  flex-direction: column;
+  background-color: cornflowerblue;
+}
+.user-opinion-in-view {
+  display: flex;
+  flex-direction: column;
+  background-color: cornsilk;
+  text-align: left;
+  width: 35%;
+  height: auto;
+}
 /*//////// Navbar ////////*/
 /*/ /////////////////// /*/
 
-/* .navbar {
-  background-color: azure;
-} */
 .ul-links {
   display: inline;
   text-decoration: none;
