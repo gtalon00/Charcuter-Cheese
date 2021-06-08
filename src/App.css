@@ -2,8 +2,35 @@
   text-align: center;
 }
 
-/*//////// Home View ////////*/
-/*/ ////////////////////// /*/
+/*/ ////////////////////////////// /*/
+/*///////////// Navbar /////////////*/
+/*/ ///////////////////////////// /*/
+
+.ul-links {
+  display: inline;
+  text-decoration: none;
+}
+
+.li-links {
+  /* display: inline-block; */
+  text-decoration: none;
+  background-color: rgba(255, 248, 220, 0.651);
+  width: 100vw;
+}
+
+/*/ ///////////////////////////// /*/
+/*///////////// Header /////////////*/
+/*/ ///////////////////////////// /*/
+
+.img {
+  background: url(https://media.istockphoto.com/photos/assorted-cheeses-fruits-nuts-platter-picture-id1052365970?k=6&m=1052365970&s=612x612&w=0&h=CPDnwjD2DMNQa7eSmEdRgL8omJSnQ_QKQv0AJ4_1Q_I=);
+  background-size: cover;
+  height: 100vh;
+}
+
+/*/ ///////////////////////////////// /*/
+/*///////////// Home View /////////////*/
+/*/ ///////////////////////////////// /*/
 
 .home-view {
   /* background: url(https://media.istockphoto.com/photos/cheese-plate-picture-id491618240?k=6&m=491618240&s=612x612&w=0&h=SU6V7joBqhoZH-heoHEhRbRj54mUHgtAp0dS3cyIVXU=); */
@@ -24,8 +51,10 @@
 .home-view > p {
   text-shadow: 1px 0 10px rgb(0, 0, 0);
 }
-/*//////// CheeseInfo View ////////*/
-/*/ //////////////////////////// /*/
+
+/*/ /////////////////////////////////////// /*/
+/*///////////// CheeseInfo View /////////////*/
+/*/ ////////////////////////////////////// /*/
 
 .cheese-info {
   background: rgb(80, 30, 30);
@@ -49,8 +78,9 @@
   width: 80%;
 }
 
-/*//////// User Opinion View////////*/
-/*/ ///////////////////////////// /*/
+/*/ //////////////////////////////////////// /*/
+/*///////////// User Opinion View/////////////*/
+/*/ /////////////////////////////////////// /*/
 
 .right-side {
   background: rgb(80, 30, 30);
@@ -69,27 +99,4 @@
   text-align: left;
   width: 35%;
   height: auto;
-}
-/*//////// Navbar ////////*/
-/*/ /////////////////// /*/
-
-.ul-links {
-  display: inline;
-  text-decoration: none;
-}
-
-.li-links {
-  /* display: inline-block; */
-  text-decoration: none;
-  background-color: cornsilk;
-  width: 100vw;
-}
-
-/*//////// Header ////////*/
-/*/ /////////////////// /*/
-
-.img {
-  background: url(https://media.istockphoto.com/photos/assorted-cheeses-fruits-nuts-platter-picture-id1052365970?k=6&m=1052365970&s=612x612&w=0&h=CPDnwjD2DMNQa7eSmEdRgL8omJSnQ_QKQv0AJ4_1Q_I=);
-  background-size: cover;
-  height: 100vh;
 }
