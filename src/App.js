@@ -13,12 +13,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-        <Navbar />
+        
         
       <Switch>
 
         <Route exact path="/">
-        <Home />
+          <div class="app-home-view">
+            <Home />
+          </div>
         </Route>
 
         <Route exact path="/cheese-paring">
