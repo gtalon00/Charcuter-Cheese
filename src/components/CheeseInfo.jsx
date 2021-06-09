@@ -19,23 +19,27 @@ export default function CheeseInfo() {
     <div>
       <Header />
     <div class="cheese-info">
-      <Navbar />
+        <Navbar />
+        <div class="cheese-gridder">
       {cheeses &&
         cheeses.map((cheese) => {
           return (
             <div class="info-container">
-              <div class="inner-info-container">
                 <h1>{cheese.fields.name}</h1>
-                <p>{cheese.fields.type}</p>
-                <p>{cheese.fields.flavor}</p>
+                <div name="cheese-specifics">
+                  <p>{cheese.fields.type}</p>
+                  <p>{cheese.fields.flavor}</p>
+                </div>
+                <div class="pairings">
                 <p>{cheese.fields.meat}</p>
                 <p>{cheese.fields.crackerBreadOrNut}</p>
                 <p>{cheese.fields.sweetOrSavory}</p>
                 <p>{cheese.fields.drink}</p>
-              </div>
+                </div>
             </div>
           )
         })}
+          </div>
         </div>
     </div>
   )

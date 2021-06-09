@@ -7,9 +7,9 @@ export default function Home() {
         <br />
       <h1>Charcuter-Cheese</h1>
         <br />
-      <h2>Find the perfect charcuterie pairings <br /> for you</h2>
+      <h2>Find the perfect cheese pairings for <br />your charcuterie boards</h2>
         <br />
-      <p>Look at our suggestions and other user's for your ideal board!</p>
+      <label>Look at our suggestions and other user's for your ideal board!</label>
       <Navbar />
 
     </div>

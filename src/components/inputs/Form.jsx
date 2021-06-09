@@ -10,6 +10,7 @@ const { setOpinions } = props
   }
 
   const [input, setInput] = useState(newComment)
+  
   const handleChange = (e) => {
     const { name, value } = e.target
 

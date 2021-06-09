@@ -2,25 +2,10 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <div class="img">
-      {/* <br />
+    <div class="header">
       <br />
+      <h1>Charcuter-Cheese</h1>
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br /> */}
     </div>
   )
 }

@@ -16,15 +16,11 @@ function App() {
       <Switch>
 
         <Route exact path="/">
-          <div class="app-home-view">
             <Home />
-          </div>
         </Route>
 
         <Route exact path="/cheese-paring">
-          <div class="app-info-container">
             <CheeseInfo />
-          </div>
         </Route>
 
         <Route exact path="/user-opinion">
