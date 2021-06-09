@@ -31,10 +31,10 @@ export default function CheeseInfo() {
                   <p>{cheese.fields.flavor}</p>
                 </div>
                 <div class="cheese-pairings">
-                <p>{cheese.fields.meat}</p>
-                <p>{cheese.fields.crackerBreadOrNut}</p>
-                <p>{cheese.fields.sweetOrSavory}</p>
-                <p>{cheese.fields.drink}</p>
+                <p>Meats: <br />{cheese.fields.meat}</p>
+                <p>Grains and Nuts: <br />{cheese.fields.crackerBreadOrNut}</p>
+                <p>Sweet and Savory: <br />{cheese.fields.sweetOrSavory}</p>
+                <p>Drinks: <br />cheese.fields.drink}</p>
                 </div>
             </div>
           )
