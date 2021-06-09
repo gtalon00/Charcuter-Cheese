@@ -1,6 +1,4 @@
-import Header from "./components/layout/Header"
 import Footer from "./components/layout/Footer"
-import Navbar from "./components/layout/Navbar"
 
 import UserOpinions from "./components/UserOpinion"
 import CheeseInfo from "./components/CheeseInfo"
