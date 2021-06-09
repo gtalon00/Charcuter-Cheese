@@ -25,16 +25,18 @@ export default function CheeseInfo() {
         cheeses.map((cheese) => {
           return (
             <div class="info-container">
+              <div class="cheese-name">
                 <h1>{cheese.fields.name}</h1>
-                <div name="cheese-specifics">
-                  <p>{cheese.fields.type}</p>
-                  <p>{cheese.fields.flavor}</p>
+              </div>
+                <div class="cheese-specifics">
+                  <p>Cheese Type:  {cheese.fields.type}</p>
+                  <p>Flavor Profile:  {cheese.fields.flavor}</p>
                 </div>
                 <div class="cheese-pairings">
                 <p>Meats: <br />{cheese.fields.meat}</p>
-                <p>Grains and Nuts: <br />{cheese.fields.crackerBreadOrNut}</p>
+                <p>Grains & Nuts: <br />{cheese.fields.crackerBreadOrNut}</p>
                 <p>Sweet and Savory: <br />{cheese.fields.sweetOrSavory}</p>
-                <p>Drinks: <br />cheese.fields.drink}</p>
+                <p>Drinks: <br />{cheese.fields.drink}</p>
                 </div>
             </div>
           )
