@@ -7,19 +7,19 @@ export default function Navbar() {
       <ul class="ul-links">
         <li class="li-links">
           <Link to="/" style={{ textDecoration: 'none' }}>
-        Home
+        | Home |
         </Link>
         </li>
 
         <li class="li-links">
         <Link to="/cheese-paring" style={{ textDecoration: 'none' }}>
-        Find Some Cheese Based Parings!
+        | Find Some Cheese Based Parings! |
         </Link>
         </li>
 
         <li class="li-links">
         <Link to="/user-opinion" style={{ textDecoration: 'none' }}>   
-            User's Opinion
+            | User's Opinion |
         </Link>
         </li>
         </ul>
