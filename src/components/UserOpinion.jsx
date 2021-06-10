@@ -26,6 +26,7 @@ export default function CheeseInfo() {
           return (
             <div class="user-opinion-in-view">
               <h2>{opinion.fields.name}</h2>
+              <hr class="divider"/>
               <p>{opinion.fields.input}</p>
             </div>
           )

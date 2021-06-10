@@ -39,8 +39,8 @@ export default function CheeseInfo() {
                 <p>Grains & Nuts: <br />{cheese.fields.crackerBreadOrNut}</p>
                 <p>Sweet & Savory: <br />{cheese.fields.sweetOrSavory}</p>
                 <p>Drinks: <br />{cheese.fields.drink}</p>
-                </div>
-            </div>
+              </div>
+              </div>
           )
         })}
         </div>

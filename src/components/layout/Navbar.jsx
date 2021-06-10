@@ -9,21 +9,21 @@ export default function Navbar() {
         <li class="li-links">
           <Link to="/"
             style={{ color: 'rgb(94, 73, 73)', textDecoration: 'none' }}>
-            |  Home  |  
+            <strong>|</strong>  Home  <strong>|</strong>  
         </Link>
         </li>
 
         <li class="li-links">
           <Link to="/cheese-paring"
             style={{ color: 'rgb(94, 73, 73)', textDecoration: 'none' }}>
-          | Find Some Cheese Based Parings!  |  
+          <strong>|</strong>  Find Some Cheese Based Parings!  <strong>|</strong>  
         </Link>
         </li>
 
         <li class="li-links">
           <Link to="/user-opinion"
             style={{ color: 'rgb(94, 73, 73)', textDecoration: 'none' }}>
-              |  User's Opinion  |  
+              <strong>|</strong>  User's Opinion  <strong>|</strong>  
         </Link>
         </li>
       </ul>
