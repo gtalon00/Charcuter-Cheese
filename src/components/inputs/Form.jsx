@@ -30,10 +30,11 @@ const { setOpinions } = props
 
   
   return (
-    <div>
+    <div class="form">
       <label> Give us your feedback! What cheeses
-        or pairings are you a fan of or
+      or pairings are you a fan of or
         would you like to see?</label>
+      <div class="user-input-form">
       <form onChange={handleChange}>
         <input
           type="text"
@@ -42,14 +43,14 @@ const { setOpinions } = props
         />
         <br />
         <input 
-          style={{height: 100}}
           type="text"
           name="input"
           placeholder="Your thoughts!"
-        />
+          />
         <br />
         <button onClick={handleSubmit}>Submit</button>
       </form>
+      </div>
     </div>
   )
 }

@@ -6,19 +6,30 @@
 /*/////////////////////// Navbar ///////////////////////*/
 /*/ ///////////////////////////////////////////////// /*/
 
+.navbar {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 248, 220, 0.651);
+}
+
 .ul-links {
   display: inline;
   text-decoration: none;
+  max-width: 100%;
 }
 
 .li-links {
-  /* display: flex;
-  flex-flow: row wrap; */
+  display: inline;
   text-decoration: none;
   font-family: "Crimson Pro", serif;
-  font-size: 1.75vw;
-  background-color: rgba(255, 248, 220, 0.651);
-  max-width: 100vw;
+  color: rgb(94, 73, 73);
+  font-size: 2vw;
+}
+
+.li-links:hover {
+  background-color: rgba(255, 248, 220, 0.034);
+  font-size: 2.3vw;
+  transition-duration: 0.5s;
 }
 
 /*/ ////////////////////////////////////////////////// /*/
@@ -26,7 +37,6 @@
 /*/ ///////////////////////////////////////////////// /*/
 
 .header {
-  /* background: url(https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/72966651_2559285287452156_7846582019143237632_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=-c4xCAM_yeQAX_lt-_F&_nc_ht=scontent-lga3-2.xx&oh=d1b93c9ea2fc19c67e7cb885b00cfa24&oe=60E79F7A); */
   background: url(https://media.istockphoto.com/photos/assorted-cheeses-fruits-nuts-platter-picture-id1052365970?k=6&m=1052365970&s=612x612&w=0&h=CPDnwjD2DMNQa7eSmEdRgL8omJSnQ_QKQv0AJ4_1Q_I=);
   background-size: cover;
   color: white;
@@ -77,7 +87,6 @@
 
 .cheese-info {
   background: rgb(80, 30, 30);
-  background-size: cover;
   height: 100%;
   width: 100%;
 }
@@ -87,7 +96,7 @@
   margin: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  background-color: blue;
+  /* background-color: blue; */
   max-width: 100vw;
 }
 
@@ -97,11 +106,20 @@
 }
 
 .cheese-name {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
   font-family: "Libre Baskerville", serif;
   font-size: 1.5vw;
   color: rgb(100, 99, 96);
   text-shadow: 1px 0 1px rgb(0, 0, 0);
   background-color: cornsilk;
+}
+
+.name-headding {
+  background-color: green;
+  padding: 10px;
 }
 
 .cheese-specifics {
@@ -113,6 +131,7 @@
 .cheese-pairings {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  text-align: left;
   background-color: cadetblue;
 }
 /*/ //////////////////////////////////////////////////////////// /*/
@@ -120,7 +139,7 @@
 /*/ /////////////////////////////////////////////////////////// /*/
 
 .user-opinion {
-  background: rgb(168, 142, 142);
+  background-color: rgb(82, 9, 9);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto 1fr;
@@ -152,13 +171,34 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
-  background-color: gray;
+  background-color: rgba(82, 9, 9, 0.863);
 }
 
 .user-opinion-in-view {
   grid-area: opinion;
-  background-color: cornsilk;
+
+  background-color: rgb(230, 223, 199);
+  border: 5px solid rgb(20, 20, 20);
   text-align: left;
-  width: 35%;
+  min-width: 60%;
+  max-width: 60%;
+  min-height: 30%;
   height: auto;
+}
+
+.user-opinion-in-view > h2,
+p {
+  margin: 15px 15px 0 15px;
+  font-family: "Libre Baskerville", serif;
+}
+
+/*/ //////////////////////////////////////////////////////////// /*/
+/*///////////////////////////// Form /////////////////////////////*/
+/*/ /////////////////////////////////////////////////////////// /*/
+
+.user-input-form {
+  display: grid;
+  justify-content: center;
+  width: 50%;
+  background-color: rgb(100, 99, 96);
 }

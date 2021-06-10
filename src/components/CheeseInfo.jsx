@@ -26,7 +26,9 @@ export default function CheeseInfo() {
           return (
             <div class="info-container">
               <div class="cheese-name">
-                <h1>{cheese.fields.name}</h1>
+                <div class="name-headding">
+                  <h1>{cheese.fields.name}</h1>
+                </div>
               </div>
                 <div class="cheese-specifics">
                   <p>Cheese Type:  {cheese.fields.type}</p>
@@ -35,7 +37,7 @@ export default function CheeseInfo() {
                 <div class="cheese-pairings">
                 <p>Meats: <br />{cheese.fields.meat}</p>
                 <p>Grains & Nuts: <br />{cheese.fields.crackerBreadOrNut}</p>
-                <p>Sweet and Savory: <br />{cheese.fields.sweetOrSavory}</p>
+                <p>Sweet & Savory: <br />{cheese.fields.sweetOrSavory}</p>
                 <p>Drinks: <br />{cheese.fields.drink}</p>
                 </div>
             </div>
