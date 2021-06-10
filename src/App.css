@@ -2,9 +2,9 @@
   text-align: center;
 }
 
-/*/ ////////////////////////////// /*/
-/*///////////// Navbar /////////////*/
-/*/ ///////////////////////////// /*/
+/*/ ////////////////////////////////////////////////// /*/
+/*/////////////////////// Navbar ///////////////////////*/
+/*/ ///////////////////////////////////////////////// /*/
 
 .ul-links {
   display: inline;
@@ -21,11 +21,12 @@
   max-width: 100vw;
 }
 
-/*/ ///////////////////////////// /*/
-/*///////////// Header /////////////*/
-/*/ ///////////////////////////// /*/
+/*/ ////////////////////////////////////////////////// /*/
+/*/////////////////////// Header ///////////////////////*/
+/*/ ///////////////////////////////////////////////// /*/
 
 .header {
+  /* background: url(https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/72966651_2559285287452156_7846582019143237632_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=-c4xCAM_yeQAX_lt-_F&_nc_ht=scontent-lga3-2.xx&oh=d1b93c9ea2fc19c67e7cb885b00cfa24&oe=60E79F7A); */
   background: url(https://media.istockphoto.com/photos/assorted-cheeses-fruits-nuts-platter-picture-id1052365970?k=6&m=1052365970&s=612x612&w=0&h=CPDnwjD2DMNQa7eSmEdRgL8omJSnQ_QKQv0AJ4_1Q_I=);
   background-size: cover;
   color: white;
@@ -38,13 +39,13 @@
   text-shadow: 1px 0 10px rgb(0, 0, 0);
 }
 
-/*/ ///////////////////////////////// /*/
-/*///////////// Home View /////////////*/
-/*/ ///////////////////////////////// /*/
+/*/ ///////////////////////////////////////////////////// /*/
+/*/////////////////////// Home View ///////////////////////*/
+/*/ //////////////////////////////////////////////////// /*/
 
 .home-view {
   /* background: url(https://media.istockphoto.com/photos/cheese-plate-picture-id491618240?k=6&m=491618240&s=612x612&w=0&h=SU6V7joBqhoZH-heoHEhRbRj54mUHgtAp0dS3cyIVXU=); */
-  /* background: url(); */
+  /* background: url(https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/72966651_2559285287452156_7846582019143237632_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=-c4xCAM_yeQAX_lt-_F&_nc_ht=scontent-lga3-2.xx&oh=d1b93c9ea2fc19c67e7cb885b00cfa24&oe=60E79F7A); */
   background: url(https://media.istockphoto.com/photos/assorted-cheeses-fruits-nuts-platter-picture-id1052365970?k=6&m=1052365970&s=612x612&w=0&h=CPDnwjD2DMNQa7eSmEdRgL8omJSnQ_QKQv0AJ4_1Q_I=);
 
   background-size: cover;
@@ -70,9 +71,9 @@
   text-shadow: 1px 0 10px rgb(0, 0, 0);
 }
 
-/*/ /////////////////////////////////////// /*/
-/*///////////// CheeseInfo View /////////////*/
-/*/ ////////////////////////////////////// /*/
+/*/ /////////////////////////////////////////////////////////// /*/
+/*/////////////////////// CheeseInfo View ///////////////////////*/
+/*/ ////////////////////////////////////////////////////////// /*/
 
 .cheese-info {
   background: rgb(80, 30, 30);
@@ -114,35 +115,48 @@
   grid-template-columns: 1fr 1fr;
   background-color: cadetblue;
 }
-/*/ //////////////////////////////////////// /*/
-/*///////////// User Opinion View/////////////*/
-/*/ /////////////////////////////////////// /*/
+/*/ //////////////////////////////////////////////////////////// /*/
+/*/////////////////////// User Opinion View///////////////////////*/
+/*/ /////////////////////////////////////////////////////////// /*/
 
 .user-opinion {
   background: rgb(168, 142, 142);
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "cover navbar"
+    "cover interaction"
+    "cover opinion";
+  min-height: 100vh;
 }
 
 .user-opinion > img {
-  width: auto;
-  height: 500px;
+  grid-area: cover;
+  width: 100%;
+  align-self: contain;
+  /* height: 100%; */
 }
 
-.right-side {
-  background: rgb(80, 30, 30);
-  display: flex;
-  flex-flow: row wrap;
+.nav-user-opinion {
+  height: 100%;
 }
+
+.user-form {
+  grid-area: interaction;
+}
+
 .user-interaction {
+  grid-area: opinion;
   display: flex;
-  flex-direction: column;
-  background-color: rgb(121, 101, 76);
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: gray;
 }
+
 .user-opinion-in-view {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  grid-area: opinion;
   background-color: cornsilk;
   text-align: left;
   width: 35%;
