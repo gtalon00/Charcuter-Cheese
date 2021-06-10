@@ -17,7 +17,10 @@ export default function CheeseInfo() {
   
   return (
     <div>
-      <Header />
+      <div class="background-image">
+        <br />
+      <h1>Charcuter-Cheese</h1>
+      </div>
     <div class="cheese-info">
         <Navbar />
         <div class="cheese-gridder">
