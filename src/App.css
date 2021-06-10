@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /*/ ////////////////////////////////////////////////// /*/
 /*/////////////////////// Navbar ///////////////////////*/
 /*/ ///////////////////////////////////////////////// /*/
@@ -27,7 +40,7 @@
 
 .li-links:hover {
   background-color: rgba(255, 248, 220, 0.034);
-  font-size: 2.3vw;
+  font-size: 2.5vw;
   transition-duration: 0.5s;
 }
 
@@ -41,9 +54,6 @@
 }
 
 .header > h1 {
-  font-family: "Cormorant", serif;
-  font-size: 8vw;
-  text-shadow: 1px 0 10px rgb(0, 0, 0);
 } */
 
 /*/ ///////////////////////////////////////////////////// /*/
@@ -57,7 +67,7 @@
   background-size: cover;
   color: white;
   height: 100vh;
-  border: 5px solid rgb(20, 20, 20);
+  width: 100vw;
 }
 
 .home-view > h1 {
@@ -87,12 +97,14 @@
 .background-image {
   background: url(https://media.istockphoto.com/photos/assorted-cheeses-fruits-nuts-platter-picture-id1052365970?k=6&m=1052365970&s=612x612&w=0&h=CPDnwjD2DMNQa7eSmEdRgL8omJSnQ_QKQv0AJ4_1Q_I=);
   background-size: cover;
-  width: 100vw;
   height: 475px;
+  color: white;
+  font-family: "Cormorant", serif;
+  font-size: 4vw;
+  text-shadow: 1px 0 10px rgb(0, 0, 0);
 }
 
 .cheese-info {
-  border: 5px solid rgb(20, 20, 20);
   background: rgb(80, 30, 30);
   height: 100%;
   width: 100%;
@@ -146,9 +158,8 @@
 /*/ /////////////////////////////////////////////////////////// /*/
 
 .user-opinion {
-  /* background-color: rgb(82, 9, 9); */
   background-color: rgb(80, 30, 30);
-  border: 5px solid rgb(20, 20, 20);
+  /* background-color: rgb(80, 30, 30); */
   /* height: 100%; */
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -176,13 +187,13 @@
 }
 
 .user-interaction {
-  /* grid-area: opinion; */
+  grid-area: opinion;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgb(190, 165, 165);
   overflow-y: scroll;
+  background-color: rgb(160, 140, 121);
 }
 
 .user-opinion-in-view {
@@ -193,8 +204,8 @@
   min-width: 60%;
   max-width: 60%;
   min-height: 30%;
-  width: 400px;
-  max-height: 771px;
+  /* width: 400px; */
+  max-height: 60%;
   height: auto;
 }
 
