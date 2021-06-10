@@ -43,7 +43,8 @@ export default function CheeseInfo() {
             </div>
           )
         })}
-          </div>
+        </div>
+        <br />
         </div>
     </div>
   )
