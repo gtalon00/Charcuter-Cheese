@@ -30,11 +30,13 @@ export default function Form(props) {
     <div className="form">
       <br />
       <div className="label">
-        <label className="input-field-prompt">
+        <h1 className="input-field-prompt-h1">
           Give us your feedback! <br />
-          <br /> What cheeses or pairings are you a fan of
+        </h1>
+        <h2 className="input-field-prompt-h2">
+          What cheeses or pairings are you a fan of
           <br /> or would you like to see?
-        </label>
+        </h2>
       </div>
       <br />
       <br />
