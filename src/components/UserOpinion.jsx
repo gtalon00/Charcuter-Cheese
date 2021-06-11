@@ -21,6 +21,7 @@ export default function CheeseInfo() {
       <Navbar />
       <Form class="user-form" setOpinions={setOpinions}/>
       <div class="user-interaction">
+        <div style={{ marginBottom: '100px' }}></div>
       {opinions &&
         opinions.map((opinion) => {
           return (
@@ -31,6 +32,7 @@ export default function CheeseInfo() {
             </div>
           )
         })}
+        <div style={{height: '300px'}}></div>
         </div>
       </div>
   )

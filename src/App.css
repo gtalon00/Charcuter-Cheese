@@ -120,15 +120,20 @@
 }
 
 .info-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: auto;
+  padding: 10px;
   background-color: rgb(202, 149, 149);
+  min-height: 500px;
   width: 100%;
 }
 
 .cheese-name {
-  display: grid;
-  justify-content: center;
   width: 100%;
-  height: 30%;
+  min-height: 35%;
+  height: auto;
   font-family: "Libre Baskerville", serif;
   font-size: 1.5vw;
   color: rgb(100, 99, 96);
@@ -136,14 +141,23 @@
   background-color: cornsilk;
 }
 
-.name-headding {
+/* .name-headding {
+  height: 100%;
+  max-height: 25%;
   background-color: green;
   padding: 10px;
-}
+} */
 
 .cheese-specifics {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  flex-grow: 1;
   text-align: left;
-  width: 90%;
+  box-sizing: border-box;
+  /* margin: 30px; */
+  /* width: 90%; */
+  /* padding: 50px 20px; */
   background-color: rgb(197, 220, 221);
 }
 
@@ -169,6 +183,9 @@
     "cover interaction"
     "cover opinion";
   min-height: 100vh;
+  max-height: 100vh;
+
+  overflow: hidden;
 }
 
 .user-opinion > img {
@@ -176,6 +193,7 @@
   width: 100%;
   align-self: contain;
   min-height: 100%;
+  /* position: ; */
 }
 
 .nav-user-opinion {
@@ -193,8 +211,14 @@
   align-items: center;
   justify-content: space-evenly;
   overflow-y: scroll;
-  background-color: rgb(160, 140, 121);
+  height: 800px;
+  /* background-color: rgb(160, 140, 121); */
+  background-color: rgb(70, 63, 57);
 }
+
+/* .user-interaction:nph-child(1) {
+  margin-top: 600px;
+} */
 
 .user-opinion-in-view {
   grid-area: opinion;
@@ -202,11 +226,12 @@
   border: 5px solid rgb(20, 20, 20);
   text-align: left;
   min-width: 60%;
-  max-width: 60%;
-  min-height: 30%;
+  max-width: 100px;
+  min-height: 200px;
+  margin: 10px 0;
   /* width: 400px; */
-  max-height: 60%;
-  height: auto;
+  /* max-height: 60%; */
+  /* height: auto; */
 }
 
 .user-opinion-in-view > h2,

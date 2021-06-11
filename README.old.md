@@ -96,10 +96,10 @@ User Opinions endpoint:
 | ---------- | -------------------------------------------------- | ---------- |
 | June 5-6   | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
 | June 7     | Project Approval                                   | Complete   |
-| June 8     | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| June 9     | Any Pseudocode / Actual Code                       | Incomplete |
-| June 10    | Initial Clickable Model                            | Incomplete |
-| June 11    | MVP                                                | Incomplete |
+| June 8     | Core Application Structure (HTML, CSS, etc.)       | Complete   |
+| June 9     | Any Pseudocode / Actual Code                       | Complete   |
+| June 10    | Initial Clickable Model                            | Complete   |
+| June 11    | MVP                                                | Complete   |
 | June 12-13 | CSS Finalization                                   | Incomplete |
 | June 14    | Presentations                                      | Incomplete |
 

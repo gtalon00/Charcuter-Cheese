@@ -29,20 +29,20 @@ export default function CheeseInfo() {
           return (
             <div class="info-container">
               <div class="cheese-name">
-                <div class="name-headding">
+                {/* <div class="name-headding"> */}
                   <h1>{cheese.fields.name}</h1>
-                </div>
+                {/* </div> */}
               </div>
                 <div class="cheese-specifics">
                   <p>Cheese Type:  {cheese.fields.type}</p>
                   <p>Flavor Profile:  {cheese.fields.flavor}</p>
-                </div>
                 <div class="cheese-pairings">
                 <p>Meats: <br />{cheese.fields.meat}</p>
                 <p>Grains & Nuts: <br />{cheese.fields.crackerBreadOrNut}</p>
                 <p>Sweet & Savory: <br />{cheese.fields.sweetOrSavory}</p>
                 <p>Drinks: <br />{cheese.fields.drink}</p>
               </div>
+                </div>
               </div>
           )
         })}
