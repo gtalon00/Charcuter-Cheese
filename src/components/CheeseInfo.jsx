@@ -32,8 +32,8 @@ export default function CheeseInfo() {
                 {/* </div> */}
               </div>
                 <div className="cheese-specifics">
-                  <p>Cheese Type:  {cheese.fields.type}</p>
-                  <p>Flavor Profile:  {cheese.fields.flavor}</p>
+                  <p className="cheese-type">Cheese Type:  {cheese.fields.type}</p>
+                  <p className="flavor-profile">Flavor Profile:  {cheese.fields.flavor}</p>
                 <div className="cheese-pairings">
                 <p><strong>Meats:</strong> <br />{cheese.fields.meat}</p>
                 <p><strong>Grains & Nuts:</strong> <br />{cheese.fields.crackerBreadOrNut}</p>
