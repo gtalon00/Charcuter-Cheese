@@ -39,7 +39,6 @@
 }
 
 .li-links:hover {
-  background-color: rgba(255, 248, 220, 0.034);
   font-size: 2.5vw;
   transition-duration: 0.5s;
 }
@@ -47,14 +46,6 @@
 /*/ ////////////////////////////////////////////////// /*/
 /*/////////////////////// Header ///////////////////////*/
 /*/ ///////////////////////////////////////////////// /*/
-
-/* .header {
-  background-size: cover;
-  color: white;
-}
-
-.header > h1 {
-} */
 
 /*/ ///////////////////////////////////////////////////// /*/
 /*/////////////////////// Home View ///////////////////////*/
@@ -101,7 +92,7 @@
   background: url(https://www.vadimdaniel.com/wp-content/uploads/2017/05/cheese-plate-on-bords-creative-food-photography-by-Vadim-Daniel.jpg);
 
   background-size: cover;
-  height: 475px;
+  height: 280px;
   color: white;
   font-family: "Cormorant", serif;
   font-size: 4vw;
@@ -124,13 +115,14 @@
 }
 
 .info-container {
-  display: flex;
-  flex-flow: column nowrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 3fr;
   justify-content: space-between;
   height: auto;
   padding: 10px;
   background-color: rgb(202, 149, 149);
-  min-height: 500px;
+  max-height: 500px;
   /* width: 100%; */
 }
 
@@ -154,7 +146,7 @@
 
 .cheese-specifics {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-flow: column nowrap;
   flex-grow: 1;
   text-align: left;
@@ -170,14 +162,18 @@
 }
 
 .cheese-pairings {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   text-align: left;
   background-color: cadetblue;
   max-height: 100%;
   max-width: 100%;
-  /* padding-bottom: 5px; */
 }
+
+.cheese-pairings > p {
+  width: 40%;
+}
+
 /*/ //////////////////////////////////////////////////////////// /*/
 /*/////////////////////// User Opinion View///////////////////////*/
 /*/ /////////////////////////////////////////////////////////// /*/
@@ -204,14 +200,6 @@
   grid-area: cover;
   height: 100vh;
 }
-/* .user-opinion > img {
-  grid-area: cover;
-  width: 100%;
-  grid-row: 1 / span 3;
-  align-self: contain;
-  max-height: 150vh;
-  position: ;
-} */
 
 .opinion-navbar {
   grid-area: navbar;
@@ -229,13 +217,10 @@
   grid-area: opinion;
   display: flex;
   flex-direction: column;
-  /* flex-flow: column nowrap; */
   align-items: center;
   justify-content: flex-start;
   overflow-y: scroll;
   height: 100%;
-  /* grid-row: 3; */
-  /* background-color: rgb(160, 140, 121); */
   background-color: rgb(70, 63, 57);
 }
 
@@ -283,6 +268,8 @@ p {
 
 .label {
   padding: 5px;
+  width: 70%;
+  margin: auto;
   background-color: rgb(71, 139, 141);
 }
 
@@ -290,4 +277,22 @@ p {
   font-size: 1.5vw;
   font-family: "Libre Baskerville", serif;
   background-color: rgb(197, 220, 221);
+}
+
+.submit-opinion {
+  height: 40%;
+  width: 50%;
+  background-color: rgb(226, 226, 200);
+}
+
+@media screen and (max-width: 1050px) {
+  .cheese-gridder {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cheese-gridder {
+    grid-template-columns: 1fr;
+  }
 }
