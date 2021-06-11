@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import {GetCheeses} from "../services/api"
 import Navbar from "./layout/Navbar"
-import Header from "./layout/Header"
 
 export default function CheeseInfo() {
   const [cheeses, setCheeses] = useState([])
@@ -9,7 +8,6 @@ export default function CheeseInfo() {
   useEffect(() => {
     const fetchData = async () => {
       const res = await GetCheeses()
-      console.log(res)
       setCheeses(res)
     }
     fetchData()
@@ -17,30 +15,30 @@ export default function CheeseInfo() {
   
   return (
     <div>
-      <div class="background-image">
+      <div className="background-image">
         <br />
       <h1>Charcuter-Cheese</h1>
       </div>
-    <div class="cheese-info">
+    <div className="cheese-info">
         <Navbar />
-        <div class="cheese-gridder">
+        <div className="cheese-gridder">
       {cheeses &&
         cheeses.map((cheese) => {
           return (
-            <div class="info-container">
-              <div class="cheese-name">
-                {/* <div class="name-headding"> */}
+            <div className="info-container">
+              <div className="cheese-name">
+                {/* <div className="name-headding"> */}
                   <h1>{cheese.fields.name}</h1>
                 {/* </div> */}
               </div>
-                <div class="cheese-specifics">
+                <div className="cheese-specifics">
                   <p>Cheese Type:  {cheese.fields.type}</p>
                   <p>Flavor Profile:  {cheese.fields.flavor}</p>
-                <div class="cheese-pairings">
-                <p>Meats: <br />{cheese.fields.meat}</p>
-                <p>Grains & Nuts: <br />{cheese.fields.crackerBreadOrNut}</p>
-                <p>Sweet & Savory: <br />{cheese.fields.sweetOrSavory}</p>
-                <p>Drinks: <br />{cheese.fields.drink}</p>
+                <div className="cheese-pairings">
+                <p><strong>Meats:</strong> <br />{cheese.fields.meat}</p>
+                <p><strong>Grains & Nuts:</strong> <br />{cheese.fields.crackerBreadOrNut}</p>
+                <p><strong>Sweet & Savory:</strong> <br />{cheese.fields.sweetOrSavory}</p>
+                <p><strong>Drinks:</strong> <br />{cheese.fields.drink}</p>
               </div>
                 </div>
               </div>

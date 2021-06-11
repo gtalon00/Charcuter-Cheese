@@ -18,11 +18,11 @@ function App() {
         </Route>
 
         <Route exact path="/cheese-paring">
-            <CheeseInfo />
+          <CheeseInfo />
         </Route>
 
         <Route exact path="/user-opinion">
-        <UserOpinions />
+          <UserOpinions />
         </Route>
         
       </Switch>

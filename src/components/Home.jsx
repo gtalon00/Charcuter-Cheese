@@ -3,7 +3,7 @@ import Navbar from "./layout/Navbar"
 export default function Home() {
 
   return (
-    <div class="home-view">
+    <div className="home-view">
         <br />
       <h1>Charcuter-Cheese</h1>
         <br />

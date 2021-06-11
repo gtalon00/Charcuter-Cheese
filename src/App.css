@@ -125,7 +125,7 @@
   justify-content: space-between;
   height: auto;
   padding: 10px;
-  background-color: rgb(202, 149, 149);
+  /* background-color: rgb(202, 149, 149); */
   min-height: 500px;
   width: 100%;
 }
@@ -215,10 +215,6 @@
   /* background-color: rgb(160, 140, 121); */
   background-color: rgb(70, 63, 57);
 }
-
-/* .user-interaction:nph-child(1) {
-  margin-top: 600px;
-} */
 
 .user-opinion-in-view {
   grid-area: opinion;

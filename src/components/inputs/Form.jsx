@@ -22,7 +22,7 @@ const { setOpinions } = props
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const res = await PostUserOpinion(input)
+    await PostUserOpinion(input)
     setOpinions(opinions => ([
     { fields: input }, ...opinions
     ]))
@@ -30,16 +30,16 @@ const { setOpinions } = props
 
   
   return (
-    <div class="form">
+    <div className="form">
       <br />
-      <div class="label">
-      <label class="input-field-prompt"> Give us your feedback! <br /><br /> What cheeses
+      <div className="label">
+      <label className="input-field-prompt"> Give us your feedback! <br /><br /> What cheeses
       or pairings are you a fan of<br /> or
         would you like to see?</label>
         </div>
         <br />
       <br />
-      <div class="user-input-form">
+      <div className="user-input-form">
         <br />
       <form onChange={handleChange}>
         <input
