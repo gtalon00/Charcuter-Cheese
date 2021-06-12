@@ -95,7 +95,7 @@
   background: url(https://www.vadimdaniel.com/wp-content/uploads/2017/05/cheese-plate-on-bords-creative-food-photography-by-Vadim-Daniel.jpg);
 
   background-size: cover;
-  height: 280px;
+  height: 360px;
   color: white;
   font-family: "Cormorant", serif;
   font-size: 4vw;
@@ -128,8 +128,10 @@
   justify-content: space-between;
   height: auto;
   padding: 10px;
-  background-color: rgb(202, 149, 149);
+  background-color: rgba(0, 0, 0, 0.438);
   max-height: 500px;
+  max-width: 333px;
+  width: auto;
 }
 
 .cheese-name {
@@ -280,9 +282,9 @@ p {
   background-color: rgb(71, 139, 141);
 }
 
-.input-field-prompt {
-  /* font-size: 1.5vw; */
-}
+/* .input-field-prompt {
+  font-size: 1.5vw;
+} */
 
 .input-field-prompt-h1 {
   /* font-size: 1.5vw; */
@@ -313,5 +315,23 @@ p {
 @media screen and (max-width: 700px) {
   .cheese-gridder {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .li-links {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .user-opinion-view {
+    grid-template-columns: 1fr;
+  }
+
+  .background-image {
+    height: 200px;
+    font-size: 25px;
+    text-shadow: 1px 0 20px rgb(0, 0, 0);
   }
 }
