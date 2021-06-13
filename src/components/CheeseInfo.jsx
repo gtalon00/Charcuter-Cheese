@@ -19,8 +19,8 @@ export default function CheeseInfo() {
         <br />
         <h1>Charcuter-Cheese</h1>
       </div>
-      <Navbar />
       <div className="cheese-info">
+        <Navbar />
         <div className="cheese-gridder">
           {cheeses &&
             cheeses.map((cheese) => {
@@ -41,19 +41,24 @@ export default function CheeseInfo() {
                   </div>
                   <div className="cheese-pairings">
                     <p>
-                      <strong>Meats:</strong> <br />
+                      <strong>Meats:</strong> <hr />
+                      {/* <br /> */}
                       {cheese.fields.meat}
                     </p>
+
                     <p>
-                      <strong>Grains & Nuts:</strong> <br />
+                      <strong>Grains & Nuts:</strong> <hr />
+                      {/* <br /> */}
                       {cheese.fields.crackerBreadOrNut}
                     </p>
                     <p>
-                      <strong>Sweet & Savory:</strong> <br />
+                      <strong>Sweet & Savory:</strong> <hr />
+                      {/* <br /> */}
                       {cheese.fields.sweetOrSavory}
                     </p>
                     <p>
-                      <strong>Drinks:</strong> <br />
+                      <strong>Drinks:</strong> <hr />
+                      {/* <br /> */}
                       {cheese.fields.drink}
                     </p>
                   </div>

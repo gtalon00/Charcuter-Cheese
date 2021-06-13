@@ -3,13 +3,13 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #c7c4c4;
 }
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgb(0, 0, 0);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
@@ -38,12 +38,10 @@
   display: inline;
   text-decoration: none;
   font-family: "Crimson Pro", serif;
-  /* font-size: 2vw; */
   font-size: 20px;
 }
 
 .li-links:hover {
-  /* font-size: 2.5vw; */
   font-size: 22px;
   transition-duration: 1s;
 }
@@ -53,8 +51,6 @@
 /*/ //////////////////////////////////////////////////// /*/
 
 .home-view {
-  /* background: url(https://media.istockphoto.com/photos/cheese-plate-picture-id491618240?k=6&m=491618240&s=612x612&w=0&h=SU6V7joBqhoZH-heoHEhRbRj54mUHgtAp0dS3cyIVXU=); */
-  /* background: url(https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/72966651_2559285287452156_7846582019143237632_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=-c4xCAM_yeQAX_lt-_F&_nc_ht=scontent-lga3-2.xx&oh=d1b93c9ea2fc19c67e7cb885b00cfa24&oe=60E79F7A); */
   background-image: url(https://www.vadimdaniel.com/wp-content/uploads/2017/05/cheese-plate-on-bords-creative-food-photography-by-Vadim-Daniel.jpg);
   background-size: cover;
   background-position: center;
@@ -65,7 +61,6 @@
 
 .home-view > h1 {
   font-family: "Cormorant", serif;
-  /* font-size: 8vw; */
   font-size: 85px;
   text-align: center;
   text-shadow: 1px 0 20px rgb(0, 0, 0);
@@ -73,14 +68,12 @@
 
 .home-view > h2 {
   font-family: "Libre Baskerville", serif;
-  /* font-size: 2.5vw; */
   font-size: 27px;
   text-shadow: 1px 0 20px rgb(0, 0, 0);
 }
 
 .home-view > label {
   font-family: "Cormorant", serif;
-  /* font-size: 2vw; */
   font-size: 22px;
   text-shadow: 1px 0 10px rgb(0, 0, 0);
 }
@@ -90,10 +83,8 @@
 /*/ ////////////////////////////////////////////////////////// /*/
 
 .background-image {
-  /* background: url(https://media.istockphoto.com/photos/assorted-cheeses-fruits-nuts-platter-picture-id1052365970?k=6&m=1052365970&s=612x612&w=0&h=CPDnwjD2DMNQa7eSmEdRgL8omJSnQ_QKQv0AJ4_1Q_I=); */
   /* background: url(https://www.vadimdaniel.com/wp-content/uploads/2017/05/cheese-plate-on-bords-creative-food-photography-by-Vadim-Daniel.jpg); */
   background-image: url(https://www.vadimdaniel.com/wp-content/uploads/2017/05/cheese-plate-on-bords-creative-food-photography-by-Vadim-Daniel.jpg);
-
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -101,7 +92,7 @@
   color: white;
   font-family: "Cormorant", serif;
   font-size: 45px;
-  text-shadow: 1px 0 10px rgb(0, 0, 0);
+  text-shadow: 1px 0 20px rgb(0, 0, 0);
 }
 
 .background-image > h1 {
@@ -110,14 +101,15 @@
 
 .cheese-info {
   /* background: rgb(80, 30, 30); */
-  background: rgb(241, 237, 224);
+  background: rgba(119, 106, 90, 0.753);
   height: 100%;
   width: 100%;
 }
 
 .cheese-gridder {
   display: grid;
-  margin: 20px;
+  padding-top: 20px;
+  margin: 0px 20px 20px 20px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   max-width: 100vw;
@@ -131,28 +123,27 @@
   justify-content: space-between;
   height: auto;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.438);
-  max-height: 457px;
+  background-color: rgba(54, 33, 33, 0.438);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.322);
+  border-radius: 4.5px;
+  max-height: 500px;
   max-width: 333px;
-  /* min-width: 331px; */
   width: auto;
 }
 
 .cheese-name {
-  /* background: url(https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/72557844_2559293980784620_6900877319175405568_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=-dTtUeRAkX8AX-Jkr5f&_nc_ht=scontent-lga3-2.xx&oh=daf8c27add007c3fcde5fbd714ab6d35&oe=60C95C07); */
-  /* background: url(https://images.unsplash.com/photo-1546962339-5ff89552b8ed?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29vZCUyMGdyYWlufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80); */
   background-image: url(https://i.etsystatic.com/9121978/c/1449/1151/0/148/il/dde8e6/2106716710/il_340x270.2106716710_hms5.jpg);
   background-size: cover;
-  width: 100%;
+  font-family: "Libre Baskerville", serif;
+  text-shadow: 1px 0 1px rgb(0, 0, 0);
+  color: rgb(235, 220, 220);
+  font-size: 16px;
   min-height: 30%;
   min-height: 120px;
+  max-height: 120px;
+  width: 100%;
   height: auto;
-  font-family: "Libre Baskerville", serif;
-  /* font-size: 1.5vw; */
-  font-size: 16px;
-  color: rgb(235, 220, 220);
-  text-shadow: 1px 0 1px rgb(0, 0, 0);
-  /* background-color: cornsilk; */
+  margin: auto;
 }
 
 .name-headding {
@@ -160,25 +151,27 @@
 }
 
 .cheese-specifics {
+  background-color: rgb(197, 220, 221);
   display: flex;
-  justify-content: space-evenly;
-  flex-flow: column nowrap;
   flex-grow: 1;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
   text-align: left;
   box-sizing: border-box;
-  /* margin: 30px; */
-  /* width: 90%; */
-  /* padding: 50px 20px; */
-  margin-top: 0px;
-  background-color: rgb(197, 220, 221);
+  border-radius: 2.5px;
+  margin: 10px auto;
+  max-height: 84.25px;
+  width: 80%;
 }
 
-/* .cheese-type {
+.cheese-type {
   margin-top: 0px;
-} */
+  font-size: 14px;
+}
 
 .flavor-profile {
   margin-top: 0px;
+  font-size: 14px;
 }
 
 .cheese-pairings {
@@ -186,8 +179,9 @@
   flex-wrap: wrap;
   text-align: left;
   background-color: cadetblue;
-  max-height: 270px;
+  max-height: 290px;
   max-width: 100%;
+  border-radius: 2.5px;
 }
 
 .cheese-pairings > p {
@@ -199,9 +193,9 @@
 /*/ /////////////////////////////////////////////////////////// /*/
 
 .user-opinion-view {
-  background-color: rgb(80, 30, 30);
   /* background-color: rgb(80, 30, 30); */
-  /* height: 100%; */
+  background: rgba(119, 106, 90, 0.753);
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, auto);
@@ -210,7 +204,6 @@
     "cover interaction"
     "cover opinion";
   height: 100vh;
-  /* overflow: hidden; */
 }
 
 .user-bg-img {
@@ -229,10 +222,6 @@
   grid-area: interaction;
 }
 
-/* .user-opinion-cell {
-  height: 100%;
-} */
-
 .user-opinion-container {
   grid-area: opinion;
   display: flex;
@@ -241,12 +230,10 @@
   justify-content: flex-start;
   overflow-y: scroll;
   height: 100%;
-  background-color: rgb(247, 233, 220);
+  background-color: rgb(252, 246, 246);
 }
 
 .user-opinion-in-view {
-  /* grid-area: opinion; */
-  /* background-color: rgb(107, 104, 96); */
   background-color: rgb(96, 107, 106);
   border: 5px solid rgb(20, 20, 20);
   text-align: left;
@@ -255,9 +242,6 @@
   min-height: 200px;
   margin: 10px 0;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
-  /* width: 400px; */
-  /* max-height: 60%; */
-  /* height: auto; */
 }
 
 .user-opinion-in-view:hover {
@@ -289,8 +273,8 @@ p {
 .user-input-form {
   display: grid;
   justify-content: center;
-  width: 50%;
-  background-color: rgb(100, 99, 96);
+  width: 60%;
+  background-color: rgba(133, 117, 117, 0.438);
   border: 5px solid rgb(20, 20, 20);
   margin: auto;
 }
@@ -307,22 +291,14 @@ p {
   text-align: left;
 }
 
-/* .input-field-prompt {
-  font-size: 1.5vw;
-} */
-
 .input-field-prompt-h1 {
-  /* font-size: 1.5vw; */
   font-size: 23px;
   font-family: "Libre Baskerville", serif;
-  /* background-color: rgb(197, 220, 221); */
 }
 
 .input-field-prompt-h2 {
-  /* font-size: 1.5vw; */
   font-size: 12px;
   font-family: "Libre Baskerville", serif;
-  /* background-color: rgb(197, 220, 221); */
 }
 
 .submit-opinion {
@@ -335,9 +311,25 @@ p {
 /*///////////////////////// Media Queries /////////////////////////*/
 /*/ //////////////////////////////////////////////////////////// /*/
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1131px) {
   .cheese-gridder {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1078px) {
+  .cheese-type {
+    font-size: 14px;
+  }
+
+  .flavor-profile {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .cheese-gridder {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -346,7 +338,7 @@ p {
     grid-template-columns: 1fr;
   }
   .user-opinion-view {
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: 30% 1fr;
   }
 }
 
@@ -358,19 +350,20 @@ p {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 585px) {
   .user-opinion-view {
     grid-template-columns: 0% 1fr;
+  }
+  .user-opinion-container {
+    background-image: url(https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/72966651_2559285287452156_7846582019143237632_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=-c4xCAM_yeQAX_lt-_F&_nc_ht=scontent-lga3-2.xx&oh=d1b93c9ea2fc19c67e7cb885b00cfa24&oe=60E79F7A);
+    background-position: center;
   }
 }
 
 @media screen and (min-width: 480px) {
   .form {
     border-left: 5px solid rgb(20, 20, 20);
-  }
-
-  .navbar {
-    border-left: 5px solid rgb(20, 20, 20);
+    border-right: 5px solid rgb(20, 20, 20);
   }
 
   .user-opinion-container {
@@ -379,10 +372,6 @@ p {
 }
 
 @media screen and (max-width: 375px) {
-  /* .user-opinion-view {
-    grid-template-columns: 0% 1fr;
-  } */
-
   .background-image {
     height: 200px;
     font-size: 25px;
@@ -395,5 +384,11 @@ p {
     height: 200px;
     font-size: 25px;
     text-shadow: 1px 0 20px rgb(0, 0, 0);
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .form {
+    border-right: 5px solid rgba(20, 20, 20, 0);
   }
 }
