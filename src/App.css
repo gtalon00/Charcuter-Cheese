@@ -125,6 +125,7 @@
   padding: 10px;
   background-color: rgba(54, 33, 33, 0.438);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.322);
+  background-color: rgba(29, 19, 19, 0.438);
   border-radius: 4.5px;
   max-height: 500px;
   max-width: 333px;
@@ -151,7 +152,11 @@
 }
 
 .cheese-specifics {
-  background-color: rgb(197, 220, 221);
+  background-color: rgb(199, 214, 200);
+  border: 1px solid rgba(0, 0, 0, 0.527);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.322);
+  text-shadow: 1px 0 1px rgba(0, 0, 0, 0.288);
+
   display: flex;
   flex-grow: 1;
   flex-flow: column nowrap;
@@ -178,7 +183,10 @@
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  background-color: cadetblue;
+  background-color: rgb(80, 97, 96);
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.322);
+
   max-height: 290px;
   max-width: 100%;
   border-radius: 2.5px;
@@ -235,7 +243,7 @@
 
 .user-opinion-in-view {
   background-color: rgb(96, 107, 106);
-  border: 5px solid rgb(20, 20, 20);
+  border: 1px solid rgba(0, 0, 0, 0.253);
   text-align: left;
   min-width: 60%;
   max-width: 100px;
@@ -274,16 +282,18 @@ p {
   display: grid;
   justify-content: center;
   width: 60%;
-  background-color: rgba(133, 117, 117, 0.438);
-  border: 5px solid rgb(20, 20, 20);
+  background-color: rgba(29, 19, 19, 0.438);
+  border: 1px solid rgba(0, 0, 0, 0.253);
   margin: auto;
+  border-radius: 2px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .prompt {
   padding: 5px;
   width: 70%;
   margin: auto;
-  background-color: rgb(71, 139, 141);
+  background-color: rgb(199, 214, 200);
 }
 
 .labels {
@@ -302,11 +312,14 @@ p {
 }
 
 .submit-opinion {
-  height: 40%;
-  width: 50%;
+  height: 35px;
+  max-width: 180px;
   background-color: rgb(226, 226, 200);
+  border-radius: 4.5px;
 }
-
+.submit-opinion:hover {
+  background-color: rgb(255, 255, 255);
+}
 /*/ ///////////////////////////////////////////////////////////// /*/
 /*///////////////////////// Media Queries /////////////////////////*/
 /*/ //////////////////////////////////////////////////////////// /*/

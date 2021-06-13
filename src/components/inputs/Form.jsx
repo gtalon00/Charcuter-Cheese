@@ -45,11 +45,11 @@ export default function Form(props) {
         <form onChange={handleChange}>
           <label className="labels">Name:</label>
           <br />
-          <input type="text" name="name" placeholder="Name/Anonymous" />
+          <textarea type="text" name="name" placeholder="Name/Anonymous" />
           <br />
           <label className="labels">Your Message:</label>
           <br />
-          <input type="text" name="input" placeholder="Your thoughts!" />
+          <textarea type="text" name="input" placeholder="Your thoughts!" />
           <br />
           <button className="submit-opinion" onClick={handleSubmit}>
             Submit
