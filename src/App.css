@@ -26,6 +26,7 @@
 }
 
 .ul-links {
+  padding: 0px;
   display: inline;
   text-decoration: none;
   max-width: 100%;
@@ -107,7 +108,8 @@
 }
 
 .cheese-info {
-  background: rgb(80, 30, 30);
+  /* background: rgb(80, 30, 30); */
+  background: rgb(241, 237, 224);
   height: 100%;
   width: 100%;
 }
@@ -135,6 +137,8 @@
 }
 
 .cheese-name {
+  background: url(https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/72557844_2559293980784620_6900877319175405568_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=-dTtUeRAkX8AX-Jkr5f&_nc_ht=scontent-lga3-2.xx&oh=daf8c27add007c3fcde5fbd714ab6d35&oe=60C95C07);
+  background-size: cover;
   width: 100%;
   min-height: 30%;
   height: auto;
@@ -236,25 +240,33 @@
   justify-content: flex-start;
   overflow-y: scroll;
   height: 100%;
-  background-color: rgb(70, 63, 57);
+  background-color: rgb(247, 233, 220);
 }
 
 .user-opinion-in-view {
   /* grid-area: opinion; */
-  background-color: rgb(230, 223, 199);
+  background-color: rgb(107, 104, 96);
   border: 5px solid rgb(20, 20, 20);
   text-align: left;
   min-width: 60%;
   max-width: 100px;
   min-height: 200px;
   margin: 10px 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
   /* width: 400px; */
   /* max-height: 60%; */
   /* height: auto; */
 }
 
+.user-opinion-in-view:hover {
+  box-shadow: 0 15px 70px rgba(0, 0, 0, 0.25);
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+
 .user-opinion-in-view > h2,
 p {
+  color: white;
   margin: 15px 15px 0 15px;
   font-family: "Libre Baskerville", serif;
 }
