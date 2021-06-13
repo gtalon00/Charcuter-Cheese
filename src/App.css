@@ -129,7 +129,7 @@
   height: auto;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.438);
-  max-height: 500px;
+  max-height: 555px;
   max-width: 333px;
   width: auto;
 }
@@ -146,12 +146,13 @@
   background-color: cornsilk;
 }
 
-/* .name-headding {
-  height: 100%;
+.name-headding {
+  margin-top: 30px;
+  /* height: 100%;
   max-height: 25%;
   background-color: green;
-  padding: 10px;
-} */
+  padding: 10px; */
+}
 
 .cheese-specifics {
   display: flex;
@@ -163,8 +164,13 @@
   /* margin: 30px; */
   /* width: 90%; */
   /* padding: 50px 20px; */
+  margin-top: 0px;
   background-color: rgb(197, 220, 221);
 }
+
+/* .cheese-type {
+  margin-top: 0px;
+} */
 
 .flavor-profile {
   margin-top: 0px;
