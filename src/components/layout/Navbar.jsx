@@ -32,7 +32,6 @@ export default function Navbar() {
             <strong>|</strong> User's Opinion <strong>|</strong>
           </Link>
         </li>
-        <br />
       </ul>
     </div>
   );

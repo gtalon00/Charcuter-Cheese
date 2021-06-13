@@ -19,8 +19,8 @@ export default function CheeseInfo() {
         <br />
         <h1>Charcuter-Cheese</h1>
       </div>
+      <Navbar />
       <div className="cheese-info">
-        <Navbar />
         <div className="cheese-gridder">
           {cheeses &&
             cheeses.map((cheese) => {

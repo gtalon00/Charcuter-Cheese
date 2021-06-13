@@ -17,7 +17,7 @@ export default function CheeseInfo() {
   return (
     <div className="user-opinion-view">
       <div className="user-bg-img"></div>
-      <Navbar />
+      <Navbar className="user-navbar" />
       <Form className="user-form" setOpinions={setOpinions} />
       <div className="user-opinion-container">
         {opinions &&

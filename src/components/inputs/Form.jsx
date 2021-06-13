@@ -29,7 +29,7 @@ export default function Form(props) {
   return (
     <div className="form">
       <br />
-      <div className="label">
+      <div className="prompt">
         <h1 className="input-field-prompt-h1">
           Give us your feedback! <br />
         </h1>
@@ -43,7 +43,11 @@ export default function Form(props) {
       <div className="user-input-form">
         <br />
         <form onChange={handleChange}>
+          <label className="labels">Name:</label>
+          <br />
           <input type="text" name="name" placeholder="Name/Anonymous" />
+          <br />
+          <label className="labels">Your Message:</label>
           <br />
           <input type="text" name="input" placeholder="Your thoughts!" />
           <br />
