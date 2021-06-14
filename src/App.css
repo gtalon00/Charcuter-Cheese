@@ -360,11 +360,13 @@ h4 {
 .submit-opinion {
   height: 35px;
   max-width: 180px;
-  background-color: rgb(226, 226, 200);
+  background-color: rgb(224, 213, 200);
+  color: rgb(102, 88, 88);
   border-radius: 4.5px;
 }
 .submit-opinion:hover {
-  background-color: rgb(255, 255, 255);
+  color: white;
+  background-color: rgba(70, 64, 64, 0.5);
 }
 
 /*/ //////////////////////////////////////////////////////////// /*/
@@ -426,6 +428,9 @@ h4 {
   }
   .thoughts {
     max-height: 30px;
+  }
+  .submit-opinion {
+    height: 25px;
   }
 }
 
