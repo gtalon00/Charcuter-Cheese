@@ -2,6 +2,8 @@
 
 ## Charcuter-Cheese
 
+[Deployed Site](https://60c76f4c9d8db3915f323f4b--youthful-sinoussi-d88238.netlify.app/)
+
 ## Project Description
 
 A place for charcuterie lovers to find perfect pairings for their boards! This application is an easy to use hub for users to find information on their favorite cheeses and their pairing. Users can see a variety of their favorite cheeses and spreads, as well as being able to add a suggestion for what they would like to see theat they did not find on the website.
