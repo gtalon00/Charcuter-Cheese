@@ -400,6 +400,12 @@ h4 {
   }
 }
 
+@media screen and (max-width: 780px) {
+  .cheese-pairings > h4 {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 760px) {
   .cheese-gridder {
     grid-template-columns: 1fr;
