@@ -211,7 +211,7 @@
   border-radius: 2.5px;
 }
 
-.cheese-pairings > p {
+.cheese-pairings > h4 {
   width: 40%;
 }
 
@@ -276,7 +276,8 @@
 }
 
 .user-opinion-in-view > h2,
-p {
+p,
+h4 {
   color: white;
   margin: 15px 15px 0 15px;
   font-family: "Libre Baskerville", serif;

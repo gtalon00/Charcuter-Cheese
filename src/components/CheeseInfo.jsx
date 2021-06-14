@@ -42,26 +42,30 @@ export default function CheeseInfo() {
                     </p>
                   </div>
                   <div className="cheese-pairings">
-                    <p>
+                    <h4>
                       <strong>Meats:</strong>
-                      <div className="fake-hr"></div>
+                      <hr />
+                      {/* <div className="fake-hr"></div> */}
                       {cheese.fields.meat}
-                    </p>
-                    <p>
+                    </h4>
+                    <h4>
                       <strong>Grains & Nuts:</strong>
-                      <div className="fake-hr"></div>
+                      <hr />
+                      {/* <div className="fake-hr"></div> */}
                       {cheese.fields.crackerBreadOrNut}
-                    </p>
-                    <p>
-                      <strong>Sweet & Savory:</strong>{" "}
-                      <div className="fake-hr"></div>
+                    </h4>
+                    <h4>
+                      <strong>Sweet & Savory:</strong>
+                      <hr />
+                      {/* <div className="fake-hr"></div> */}
                       {cheese.fields.sweetOrSavory}
-                    </p>
-                    <p>
+                    </h4>
+                    <h4>
                       <strong>Drinks:</strong>
-                      <div className="fake-hr"></div>
+                      <hr />
+                      {/* <div className="fake-hr"></div> */}
                       {cheese.fields.drink}
-                    </p>
+                    </h4>
                   </div>
                 </div>
               );
