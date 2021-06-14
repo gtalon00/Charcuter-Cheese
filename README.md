@@ -117,16 +117,16 @@ User Opinions endpoint:
 | Code For Info Page                                    |    H     |      3.5       |       4       |      4      |
 | Code For User Opinion                                 |    H     |      3.5       |       4       |      4      |
 | Have Clickable Model                                  |    H     |       2        |       2       |      2      |
-| Import Different Components And console.log() To Test |    H     |       1        |       1       |     1.5     |
+| Import Different Components And console.log() To Test |    H     |       1        |      1.5      |     1.5     |
 | Render Content On Screen For Each Page                |    H     |       4        |       4       |      4      |
 | Link Pages And Test Them                              |    H     |      2.5       |      2.5      |     2.5     |
 | CSS Structure                                         |    H     |       3        |       3       |      3      |
-| CSS Images                                            |    H     |       1        |      3.       |     3.      |
+| CSS Images                                            |    H     |       1        |       3       |      3      |
 | CSS Rough Draft                                       |    H     |       3        |       3       |      3      |
 | CSS Final Touches                                     |    H     |       4        |       6       |      6      |
-| Clean Up Code And Warnings                            |    H     |       3        |       3       |      3      |
-| Attempt PMVPs                                         |    H     |       4        |       2       |      2      |
-| Total                                                 |    H     |     47hrs      |      hrs      |     hrs     |
+| Clean Up Code And Warnings                            |    H     |       3        |      1.5      |     1.5     |
+| Attempt PMVPs                                         |    H     |       4        |      1.5      |     1.5     |
+| Total                                                 |    H     |     47hrs      |     43hrs     |    43hrs    |
 
 ## SWOT Analysis
 
