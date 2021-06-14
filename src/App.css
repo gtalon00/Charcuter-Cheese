@@ -196,6 +196,12 @@
   font-size: 14px;
 }
 
+.fake-hr {
+  margin: 8px 0px;
+  background-color: rgba(255, 255, 255, 0.589);
+  height: 2px;
+}
+
 .cheese-pairings {
   display: flex;
   flex-wrap: wrap;

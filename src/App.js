@@ -1,5 +1,3 @@
-import Footer from "./components/layout/Footer"
-
 import UserOpinions from "./components/UserOpinion"
 import CheeseInfo from "./components/CheeseInfo"
 import Home from "./components/Home"
