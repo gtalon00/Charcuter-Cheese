@@ -2,7 +2,7 @@
 
 ## Charcuter-Cheese
 
-[Deployed Site](https://60c7723a8b47cac7187166bb--youthful-sinoussi-d88238.netlify.app/)
+[Deployed Site](https://60c775af8b47caced071629e--youthful-sinoussi-d88238.netlify.app/)
 
 ## Project Description
 
