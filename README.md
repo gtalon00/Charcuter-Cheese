@@ -100,32 +100,32 @@ User Opinions endpoint:
 | June 9     | Any Pseudocode / Actual Code                       | Complete   |
 | June 10    | Initial Clickable Model                            | Complete   |
 | June 11    | MVP                                                | Complete   |
-| June 12-13 | CSS Finalization                                   | Incomplete |
+| June 12-13 | CSS Finalization                                   | Complete   |
 | June 14    | Presentations                                      | Incomplete |
 
 ## Timeframes
 
 | Component                                             | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Project Approval                                      |    H     |       2        |       1       |             |
-| Download Dependencies                                 |    H     |       .5       |      .5       |             |
-| Create Comonents/Folders                              |    H     |       1        |       1       |             |
-| Pseudo Code                                           |    H     |       1        |       1       |             |
-| Base Code Layout                                      |    H     |       2        |       2       |             |
-| Api Set Up/test                                       |    H     |      2.5       |      2.5      |             |
-| Code For Homepage                                     |    H     |      3.5       |               |             |
-| Code For Info Page                                    |    H     |      3.5       |               |             |
-| Code For User Opinion                                 |    H     |      3.5       |               |             |
-| Have Clickable Model                                  |    H     |       2        |               |             |
-| Import Different Components And console.log() To Test |    H     |       1        |       1       |             |
-| Render Content On Screen For Each Page                |    H     |       4        |       4       |             |
-| Link Pages And Test Them                              |    H     |      2.5       |      2.5      |             |
-| CSS Structure                                         |    H     |       3        |               |             |
-| CSS Images                                            |    H     |       1        |               |             |
-| CSS Rough Draft                                       |    H     |       3        |               |             |
-| CSS Final Touches                                     |    H     |       4        |               |             |
-| Clean Up Code And Warnings                            |    H     |       3        |               |             |
-| Attempt PMVPs                                         |    H     |       4        |               |             |
+| Project Approval                                      |    H     |       2        |       1       |      1      |
+| Download Dependencies                                 |    H     |       .5       |      .5       |     .5      |
+| Create Comonents/Folders                              |    H     |       1        |       1       |      1      |
+| Pseudo Code                                           |    H     |       1        |       1       |      1      |
+| Base Code Layout                                      |    H     |       2        |       2       |      2      |
+| Api Set Up/test                                       |    H     |      2.5       |      2.5      |     2.5     |
+| Code For Homepage                                     |    H     |      3.5       |       1       |      1      |
+| Code For Info Page                                    |    H     |      3.5       |       4       |      4      |
+| Code For User Opinion                                 |    H     |      3.5       |       4       |      4      |
+| Have Clickable Model                                  |    H     |       2        |       2       |      2      |
+| Import Different Components And console.log() To Test |    H     |       1        |       1       |     1.5     |
+| Render Content On Screen For Each Page                |    H     |       4        |       4       |      4      |
+| Link Pages And Test Them                              |    H     |      2.5       |      2.5      |     2.5     |
+| CSS Structure                                         |    H     |       3        |       3       |      3      |
+| CSS Images                                            |    H     |       1        |      3.       |     3.      |
+| CSS Rough Draft                                       |    H     |       3        |       3       |      3      |
+| CSS Final Touches                                     |    H     |       4        |       6       |      6      |
+| Clean Up Code And Warnings                            |    H     |       3        |       3       |      3      |
+| Attempt PMVPs                                         |    H     |       4        |       2       |      2      |
 | Total                                                 |    H     |     47hrs      |      hrs      |     hrs     |
 
 ## SWOT Analysis
