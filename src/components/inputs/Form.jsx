@@ -13,7 +13,7 @@ export default function Form(props) {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
+    console.log(name, value);
     setInput((prevInput) => ({
       ...prevInput,
       [name]: value,
@@ -24,7 +24,10 @@ export default function Form(props) {
     e.preventDefault();
     await PostUserOpinion(input);
     setOpinions((opinions) => [{ fields: input }, ...opinions]);
-    setInput(input);
+    setInput({
+      name: "",
+      input: "",
+    });
   };
 
   return (
@@ -45,28 +48,30 @@ export default function Form(props) {
         <br />
         <div className="user-input-form">
           <br />
-          <form onChange={handleChange}>
+          <form onSubmit={handleSubmit}>
             <label className="labels">Name:</label>
             <br />
             <textarea
+              onChange={handleChange}
               className="name"
               type="text"
               name="name"
               placeholder="Name/Anonymous"
+              value={input.name}
             />
             <br />
             <label className="labels">Your Message:</label>
             <br />
             <textarea
+              onChange={handleChange}
               className="thoughts"
               type="text"
               name="input"
               placeholder="Your Thoughts!"
+              value={input.input}
             />
             <br />
-            <button className="submit-opinion" onClick={handleSubmit}>
-              Submit
-            </button>
+            <button className="submit-opinion">Submit</button>
             <br />
           </form>
           <br />
