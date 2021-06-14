@@ -16,10 +16,6 @@
 }
 
 /*/ ////////////////////////////////////////////////// /*/
-/*/////////////////////// Header ///////////////////////*/
-/*/ ///////////////////////////////////////////////// /*/
-
-/*/ ////////////////////////////////////////////////// /*/
 /*/////////////////////// Navbar ///////////////////////*/
 /*/ ///////////////////////////////////////////////// /*/
 
@@ -297,7 +293,6 @@ p {
 
 .form {
   border-bottom: solid 1px black;
-  /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25); */
 }
 
 .form-and-prompt-container {
@@ -338,7 +333,6 @@ p {
 }
 
 .labels {
-  /* color: rgb(0, 0, 0); */
   text-align: left;
 }
 
@@ -350,6 +344,17 @@ p {
 .input-field-prompt-h2 {
   font-size: 12px;
   font-family: "Libre Baskerville", serif;
+}
+
+.name {
+  width: 97%;
+  max-width: 176px;
+}
+
+.thoughts {
+  max-width: 97%;
+  max-width: 176px;
+  height: 80px;
 }
 
 .submit-opinion {
@@ -436,6 +441,19 @@ p {
 
   .user-opinion-container {
     border-left: 5px solid rgb(20, 20, 20);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .name {
+    width: 90%;
+    max-width: 176px;
+  }
+
+  .thoughts {
+    width: 90%;
+    max-width: 176px;
+    height: 80px;
   }
 }
 
