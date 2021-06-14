@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { GetCheeses } from "../services/api";
 import Navbar from "./layout/Navbar";
+import Footer from "./layout/Footer";
 
 export default function CheeseInfo() {
   const [cheeses, setCheeses] = useState([]);
@@ -21,6 +22,7 @@ export default function CheeseInfo() {
       </div>
       <div className="cheese-info">
         <Navbar />
+        <hr className="top-hr" />
         <div className="cheese-gridder">
           {cheeses &&
             cheeses.map((cheese) => {
@@ -42,23 +44,18 @@ export default function CheeseInfo() {
                   <div className="cheese-pairings">
                     <p>
                       <strong>Meats:</strong> <hr />
-                      {/* <br /> */}
                       {cheese.fields.meat}
                     </p>
-
                     <p>
                       <strong>Grains & Nuts:</strong> <hr />
-                      {/* <br /> */}
                       {cheese.fields.crackerBreadOrNut}
                     </p>
                     <p>
                       <strong>Sweet & Savory:</strong> <hr />
-                      {/* <br /> */}
                       {cheese.fields.sweetOrSavory}
                     </p>
                     <p>
                       <strong>Drinks:</strong> <hr />
-                      {/* <br /> */}
                       {cheese.fields.drink}
                     </p>
                   </div>
@@ -68,6 +65,7 @@ export default function CheeseInfo() {
         </div>
         <br />
       </div>
+      <Footer />
     </div>
   );
 }

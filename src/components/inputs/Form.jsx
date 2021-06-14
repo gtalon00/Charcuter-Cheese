@@ -24,41 +24,46 @@ export default function Form(props) {
     e.preventDefault();
     await PostUserOpinion(input);
     setOpinions((opinions) => [{ fields: input }, ...opinions]);
+    setInput(input);
   };
 
   return (
     <div className="form">
       <br />
-      <div className="prompt">
-        <h1 className="input-field-prompt-h1">
-          Give us your feedback! <br />
-        </h1>
-        <h2 className="input-field-prompt-h2">
-          What cheeses or pairings are you a fan of
-          <br /> or would you like to see?
-        </h2>
+      <div className="form-and-prompt-container">
+        <br />
+        <div className="prompt">
+          <h1 className="input-field-prompt-h1">
+            Give us your feedback! <br />
+          </h1>
+          <h2 className="input-field-prompt-h2">
+            What cheeses or pairings are you a fan of
+            <br /> or would you like to see?
+          </h2>
+        </div>
+        <br />
+        <br />
+        <div className="user-input-form">
+          <br />
+          <form onChange={handleChange}>
+            <label className="labels">Name:</label>
+            <br />
+            <textarea type="text" name="name" placeholder="Name/Anonymous" />
+            <br />
+            <label className="labels">Your Message:</label>
+            <br />
+            <textarea type="text" name="input" placeholder="Your Thoughts!" />
+            <br />
+            <button className="submit-opinion" onClick={handleSubmit}>
+              Submit
+            </button>
+            <br />
+          </form>
+          <br />
+        </div>
+        <hr />
       </div>
       <br />
-      <br />
-      <div className="user-input-form">
-        <br />
-        <form onChange={handleChange}>
-          <label className="labels">Name:</label>
-          <br />
-          <textarea type="text" name="name" placeholder="Name/Anonymous" />
-          <br />
-          <label className="labels">Your Message:</label>
-          <br />
-          <textarea type="text" name="input" placeholder="Your thoughts!" />
-          <br />
-          <button className="submit-opinion" onClick={handleSubmit}>
-            Submit
-          </button>
-          <br />
-        </form>
-        <br />
-      </div>
-      <hr />
     </div>
   );
 }
