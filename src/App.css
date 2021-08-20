@@ -22,22 +22,29 @@
 .navbar {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.651);
-  padding: 6px 0px;
+  /* padding: 6px 0px; */
   width: 100%;
+  height: 50px;
 }
 
 .ul-links {
   all: unset;
   max-width: 100%;
+  display: flex;
 }
 
 .li-links {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-flow: column wrap; */
   text-decoration: none;
   font-family: "Crimson Pro", serif;
   font-size: 20px;
   padding: 0px 3.5px;
+  /* border: 1px solid black; */
 }
 
 .li-links:hover {
@@ -85,8 +92,10 @@
   background-image: url(https://i.imgur.com/2tYMET8.jpg);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-size: cover;
   height: 360px;
+  height: 460px;
   color: white;
   font-family: "Cormorant", serif;
   font-size: 42px;
@@ -97,104 +106,196 @@
   margin-top: 0;
 }
 
+.cheese-info-nav {
+  transform: translate(-1000px);
+}
+
 .cheese-info {
-  background: rgba(119, 106, 90, 0.753);
+  /* background: rgba(119, 106, 90, 0.753); */
+  /* background: rgba(91, 82, 63, 0.656); */
+  border-top: 1px black solid;
+  background: rgba(78, 46, 9, 0.247);
+  background-image: url(https://i.etsystatic.com/9121978/c/1449/1151/0/148/il/dde8e6/2106716710/il_340x270.2106716710_hms5.jpg);
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
 
-.top-hr {
+/* .top-hr {
   width: 97%;
   height: 2px;
   background-color: rgba(29, 19, 19, 0.438);
   border: solid 1px rgba(29, 19, 19, 0.438);
-}
+} */
 
 .cheese-gridder {
   display: grid;
   padding-top: 20px;
   margin: 0px 20px 20px 20px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   max-width: 100vw;
   place-items: center;
 }
 
 .info-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 3fr;
-  justify-content: space-between;
-  height: auto;
-  padding: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.322);
-  background-color: rgba(29, 19, 19, 0.438);
-  border-radius: 4.5px;
-  max-height: 500px;
-  max-width: 333px;
-  width: auto;
-  border: 1px solid rgba(0, 0, 0, 0.11);
+  border-radius: 100%;
+  overflow: hidden;
+  width: 350px;
+  height: 350px;
+  background-image: url(https://i.etsystatic.com/9121978/c/1449/1151/0/148/il/dde8e6/2106716710/il_340x270.2106716710_hms5.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .info-container:hover {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
   border: solid 1px rgba(0, 0, 0, 0.637);
   transition: 0.5s;
   transform: scale(1.01);
+  transition-timing-function: ease-in-out;
+}
+
+.bv-cheese {
+  /* background-image: url(https://previews.123rf.com/images/maruszkin/maruszkin1403/maruszkin140300004/27570519-close-up-of-blue-cheese-cheese-background.jpg); */
+  background-image: url(https://www.finedininglovers.com/sites/g/files/xknfdk626/files/styles/open_graph_image/public/Original_2935_blue-cheese-hp.jpg?itok=np_Yr3lB);
+  background-size: cover;
+}
+.wr-cheese {
+  background-image: url(https://sageburyfinefoods.co.uk/wp-content/uploads/2017/08/berthaud3.jpg);
+  background-size: cover;
+}
+.sh-cheese {
+  background-image: url(https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/628ccf27fdbff8a323cf9dbf7e9e7ab0/large.jpg);
+  background-size: cover;
+}
+.f-cheese {
+  background-image: url(https://www.savoryexperiments.com/wp-content/uploads/2020/07/Homemade-Mozzarella-High-Res-1-1200x798.jpg);
+  background-size: cover;
+  /* background-image: url(https://img-vimbly-com-images.imgix.net/full_photos/CocuSocial-Mozzarella-Cheese-Making-2.jpg?auto=compress&fit=crop&h=490&ixlib=php-1.2.1&w=730); */
+}
+.a-cheese {
+  background-image: url(https://thumbs.dreamstime.com/b/cheese-collection-matured-cow-mold-tommette-de-savoie-france-made-alpine-mountains-close-up-224838150.jpg);
+  background-size: cover;
+}
+.h-cheese {
+  background-image: url(https://knockanorecheese.com/wp-content/uploads/2016/09/cheese-texture-1168x470.jpg);
+  background-size: cover;
+}
+.ss-cheese {
+  /* background-image: url(https://previews.123rf.com/images/anmbph/anmbph1509/anmbph150900212/45954811-texture-of-the-semi-hard-cheese-with-large-holes-closeup.jpg); */
+  background-image: url(https://images.squarespace-cdn.com/content/v1/576d4d3ae4fcb5476354b3c1/1471858083828-YWXYQ12WYF87XQJUWR6B/H%26C_W_168.jpg?format=2500w);
+  background-size: cover;
+}
+.br-cheese {
+  /* background-image: url(https://i.imgur.com/5hjvWuz.png); */
+  /* background-image: url(https://cdn.shopify.com/s/files/1/1002/3766/files/Billy_480x480.jpg?v=1589925273); */
+  background-image: url(https://cdn.shopify.com/s/files/1/1697/1525/files/MindtheRind-11_large.jpg?v=1557794273);
+  background-size: cover;
+}
+.g-cheese {
+  background-image: url(https://previews.123rf.com/images/nolan777/nolan7771107/nolan777110700041/10040442-pressed-cottage-cheese-close-up-and-dill-.jpg);
+  background-image: url(https://envato-shoebox-0.imgix.net/243b/2f3f-390c-4bff-b5b1-c09776e74a48/DairyOne001-1609.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=c64eeb75e9df4e1a0a46f31246a2d63e);
+  background-size: cover;
+}
+
+.info-background-color {
+  /* background-color: rgba(255, 255, 255, 0.293); */
+  background-color: rgba(255, 255, 255, 0.423);
+  width: 325px;
+  height: 325px;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.978);
+  border: 1px solid rgba(0, 0, 0, 0.247);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cheese-name-container {
+  /* background-color: aqua; */
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -2px;
 }
 
 .cheese-name {
-  background-image: url(https://i.etsystatic.com/9121978/c/1449/1151/0/148/il/dde8e6/2106716710/il_340x270.2106716710_hms5.jpg);
-  background-size: cover;
-  font-family: "Libre Baskerville", serif;
-  text-shadow: 1px 0 1px rgb(0, 0, 0);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.322);
-  border: 1px solid rgba(0, 0, 0, 0.444);
-  color: rgb(235, 220, 220);
-  font-size: 16px;
-  min-height: 30%;
-  min-height: 120px;
-  max-height: 120px;
-  width: 100%;
-  height: auto;
-  margin: auto;
+  font-weight: normal;
 }
 
-.name-headding {
-  margin-top: 30px;
-}
-
-.cheese-specifics {
-  background-color: rgb(199, 214, 200);
-  border: 1px solid rgba(0, 0, 0, 0.527);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.322);
-  text-shadow: 1px 0 1px rgba(0, 0, 0, 0.288);
-
+.show-alone {
+  height: 152px;
+  text-align: center;
   display: flex;
-  flex-grow: 1;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  text-align: left;
-  box-sizing: border-box;
-  border-radius: 2.5px;
-  margin: 10px auto;
-  max-height: 84.25px;
-  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  height: 35%;
+  width: 100%;
+  /* background-color: rgba(0, 255, 255, 0.259); */
+  text-shadow: 1.5px 0 1.5px rgba(0, 0, 0, 0.288);
+  /* background-color: rgb(199, 214, 200); */
+  background-color: rgba(199, 214, 200, 0.512);
+  background-color: rgba(151, 165, 152, 0.671);
+}
+.cheese-specifics {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+}
+
+.hide {
+  display: none;
+}
+
+.side-arrow {
+  /* background-color: blanchedalmond; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 30px;
+}
+
+.arrow {
+  height: 70%;
+  width: 10%;
+  cursor: pointer;
+}
+
+.left {
+  transform: rotate(180deg);
+}
+.left:hover {
+  transform: scale(1.2) rotate(180deg);
+}
+.right:hover {
+  transform: scale(1.2);
 }
 
 .cheese-data {
-  color: rgb(56, 56, 56);
-  margin-top: 0px;
-  font-size: 14px;
+  /* color: rgb(56, 56, 56); */
+  /* background-color: rgb(141, 141, 155); */
+  /* width: 45%; */
+  height: 35%;
+  margin: 0px;
+  /* margin-top: 0px; */
+  /* font-size: 14px; */
 }
 
-.fake-hr {
-  margin: 8px 0px;
-  background-color: rgba(255, 255, 255, 0.589);
-  height: 2px;
-}
-
-.cheese-pairings {
+/* .cheese-pairings {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
@@ -205,11 +306,11 @@
   max-height: 290px;
   max-width: 100%;
   border-radius: 2.5px;
-}
+} */
 
-.cheese-pairings > h4 {
+/* .cheese-pairings > h4 {
   width: 40%;
-}
+} */
 
 /*/ //////////////////////////////////////////////////////////// /*/
 /*/////////////////////// User Opinion View///////////////////////*/
@@ -384,6 +485,11 @@ h4 {
 /*///////////////////////// Media Queries /////////////////////////*/
 /*/ //////////////////////////////////////////////////////////// /*/
 
+@media screen and (max-width: 1510px) {
+  .cheese-gridder {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 @media screen and (max-width: 1131px) {
   .cheese-gridder {
     grid-template-columns: 1fr 1fr;
